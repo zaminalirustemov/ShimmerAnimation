@@ -44,16 +44,22 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core) // Espresso for UI tests
 }
 
-afterEvaluate(){
+
+afterEvaluate{
     publishing {
         publications {
             create<MavenPublication>("maven") {
                 groupId = "com.github.zaminalirustemov"
                 artifactId = "shimmer_animation"
-                version = "1.0.2"
-
-
+                version = "1.0.3"
                 from(components["release"])
+            }
+        }
+
+        repositories {
+            maven {
+                name = "GitHubPackages"
+                url = uri("https://github.com/zaminalirustemov/Shimmer_Effect")
             }
         }
     }
