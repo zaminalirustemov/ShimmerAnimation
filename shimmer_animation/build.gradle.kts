@@ -50,7 +50,7 @@ afterEvaluate(){
             create<MavenPublication>("maven") {
                 groupId = "com.github.zaminalirustemov"
                 artifactId = "shimmer_animation"
-                version = "1.0.0"
+                version = "1.0.2"
 
 
                 from(components["release"])
