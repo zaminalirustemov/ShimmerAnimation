@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.jetbrains.kotlin.android)
+    `maven-publish`
 }
 
 android {
@@ -41,4 +42,19 @@ dependencies {
     testImplementation(libs.junit) // JUnit for unit tests
     androidTestImplementation(libs.androidx.junit) // JUnit for Android tests
     androidTestImplementation(libs.androidx.espresso.core) // Espresso for UI tests
+}
+
+afterEvaluate(){
+    publishing {
+        publications {
+            create<MavenPublication>("maven") {
+                groupId = "com.github.zaminalirustemov"
+                artifactId = "shimmer_animation"
+                version = "1.0.0"
+
+
+                from(components["release"])
+            }
+        }
+    }
 }
