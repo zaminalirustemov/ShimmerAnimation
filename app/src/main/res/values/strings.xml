@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Shimmer Effect</string>
+    <string name="shimmer_animation_for_item_description">Shimmer animation for item description</string>
+    <string name="shimmer_animation_for_item_price">Shimmer animation for item price</string>
+    <string name="shimmer_animation_for_item_name">Shimmer animation for item name</string>
+    <string name="shimmer_animation_for_item_photo">Shimmer animation for item photo</string>
+    <string name="user_profile_circular_icon">User profile circular icon</string>
 </resources>

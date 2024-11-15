@@ -38,22 +38,11 @@ abstract class Builder<T : Builder<T>?> {
      * @return The builder instance for method chaining.
      */
     fun loadAttributes(context: Context, attrs: AttributeSet?): T {
-        // Safely obtain styled attributes from the provided AttributeSet
-        val typedArray = context.obtainStyledAttributes(
-            /* set = */          attrs,
-            /* attrs = */        R.styleable.ShimmerFrameLayout,
-            /* defStyleAttr = */ 0,
-            /* defStyleRes = */  0
-        )
-
-        try {
-            // Apply the attributes to the shimmer object
+        context.obtainStyledAttributes(
+            attrs, R.styleable.ShimmerFrameLayout
+        ).use { typedArray ->
             loadAttributes(typedArray)
-        } finally {
-            // Ensure typedArray is always recycled to prevent memory leaks
-            typedArray.recycle()
         }
-
         return self
     }
 

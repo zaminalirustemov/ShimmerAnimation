@@ -7,31 +7,179 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!-- Shimmer Animation for Toolbar -->
     <az.lahza.shimmer_animation.shimmer.ShimmerFrameLayout
-        android:id="@+id/shimmer_animation"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/shimmer_animation_toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
             <include
                 layout="@layout/layout_shimmer_placeholder"
-                android:layout_width="304dp"
-                android:layout_height="202dp"
-                android:layout_marginStart="10dp" />
+                android:layout_width="100dp"
+                android:layout_height="25dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </az.lahza.shimmer_animation.shimmer.ShimmerFrameLayout>
+
+    <!-- Shimmer Animation for Background -->
+    <az.lahza.shimmer_animation.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_animation_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/shimmer_animation_toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
             <include
                 layout="@layout/layout_shimmer_placeholder"
-                android:layout_width="304dp"
-                android:layout_height="202dp"
-                android:layout_marginStart="10dp" />
-        </LinearLayout>
+                android:layout_width="match_parent"
+                android:layout_height="144dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </az.lahza.shimmer_animation.shimmer.ShimmerFrameLayout>
+
+    <!-- Shimmer Animation for Profile Photo -->
+    <az.lahza.shimmer_animation.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_animation_profile_photo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/shimmer_animation_background">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                layout="@layout/layout_shimmer_placeholder_circle"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </az.lahza.shimmer_animation.shimmer.ShimmerFrameLayout>
+
+    <!-- Shimmer Animation for Username -->
+    <az.lahza.shimmer_animation.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_animation_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@id/shimmer_animation_profile_photo"
+        app:layout_constraintTop_toTopOf="@id/shimmer_animation_profile_photo">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <include
+                layout="@layout/layout_shimmer_placeholder"
+                android:layout_width="150dp"
+                android:layout_height="10dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </az.lahza.shimmer_animation.shimmer.ShimmerFrameLayout>
+
+    <!-- Shimmer Animation for Description -->
+    <az.lahza.shimmer_animation.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_animation_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@id/shimmer_animation_username"
+        app:layout_constraintTop_toBottomOf="@id/shimmer_animation_username">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <include
+                layout="@layout/layout_shimmer_placeholder"
+                android:layout_width="250dp"
+                android:layout_height="50dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </az.lahza.shimmer_animation.shimmer.ShimmerFrameLayout>
+
+    <!-- Shimmer Animation for Section Name -->
+    <az.lahza.shimmer_animation.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_animation_section_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/shimmer_animation_description">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <include
+                layout="@layout/layout_shimmer_placeholder"
+                android:layout_width="300dp"
+                android:layout_height="30dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </az.lahza.shimmer_animation.shimmer.ShimmerFrameLayout>
+
+    <!-- Shimmer Animation for Data -->
+    <az.lahza.shimmer_animation.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_animation_data"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/shimmer_animation_section_name">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                android:id="@+id/first_item"
+                layout="@layout/layout_item_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <include
+                android:id="@+id/second_item"
+                layout="@layout/layout_item_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/first_item" />
+
+            <include
+                android:id="@+id/third_item"
+                layout="@layout/layout_item_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/second_item" />
+
+            <include
+                android:id="@+id/fourth_item"
+                layout="@layout/layout_item_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/third_item" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </az.lahza.shimmer_animation.shimmer.ShimmerFrameLayout>
 

@@ -65,7 +65,7 @@ class Shimmer {
     var repeatMode = ValueAnimator.RESTART
 
     /** Duration of the shimmer animation */
-    var animationDuration = 1000L
+    var animationDuration = 1400L
 
     /** Delay before the shimmer effect starts */
     var repeatDelay: Long = 0
