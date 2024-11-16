@@ -51,6 +51,8 @@ A Shimmer Animation library for Kotlin.
 		repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
 		repositories {
 			mavenCentral()
+
+        		// Include JitPack, a repository that allows you to fetch dependencies from GitHub projects.
 			maven { url 'https://jitpack.io' }
 		}
 	}
@@ -58,6 +60,7 @@ A Shimmer Animation library for Kotlin.
 **Step 2.**  Add the dependency
 
 ```css
+	// This dependencies block is for the build.gradle
 	dependencies {
 	        implementation 'com.github.zaminalirustamov:Shimmer_Animation:1.0.2'
 	}
