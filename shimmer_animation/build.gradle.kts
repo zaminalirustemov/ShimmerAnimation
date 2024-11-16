@@ -1,7 +1,7 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.jetbrains.kotlin.android)
-//    `maven-publish`
+    `maven-publish`
 }
 
 android {
@@ -44,23 +44,16 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core) // Espresso for UI tests
 }
 
-//
-//afterEvaluate{
-//    publishing {
-//        publications {
-//            create<MavenPublication>("maven") {
-//                groupId = "com.github.zaminalirustemov"
-//                artifactId = "shimmer_animation"
-//                version = "1.0.3"
-//                from(components["release"])
-//            }
-//        }
-//
-//        repositories {
-//            maven {
-//                name = "GitHubPackages"
-//                url = uri("https://github.com/zaminalirustemov/Shimmer_Effect")
-//            }
-//        }
-//    }
-//}
+
+afterEvaluate{
+    publishing {
+        publications {
+            create<MavenPublication>("maven") {
+                groupId = "com.github.zaminalirustamov"
+                artifactId = "shimmer_animation"
+                version = "1.0.0"
+                from(components["release"])
+            }
+        }
+    }
+}
