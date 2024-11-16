@@ -1,6 +1,6 @@
 
   
-# CircularReveal
+# Shimmer Animation
 - ![kotlin](https://img.shields.io/badge/Platforms-Kotlin_Compatible-lightblue?style=for-the-badge&logo=kotlin)
 - ![kotlin](https://img.shields.io/badge/Made_With-Kotlin-0095D9?style=for-the-badge&logo=kotlin)
 - ![android_7](https://img.shields.io/badge/Android-7.0_Nougat-green?style=for-the-badge)
