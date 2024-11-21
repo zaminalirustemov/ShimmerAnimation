@@ -22,7 +22,7 @@
             android:layout_height="wrap_content">
 
             <include
-                layout="@layout/layout_shimmer_placeholder"
+                layout="@layout/image_placeholder"
                 android:layout_width="100dp"
                 android:layout_height="25dp" />
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -45,7 +45,7 @@
             android:layout_height="wrap_content">
 
             <include
-                layout="@layout/layout_shimmer_placeholder"
+                layout="@layout/image_placeholder"
                 android:layout_width="match_parent"
                 android:layout_height="144dp" />
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -67,7 +67,7 @@
             android:layout_height="match_parent">
 
             <include
-                layout="@layout/layout_shimmer_placeholder_circle"
+                layout="@layout/image_placeholder_circle"
                 android:layout_width="100dp"
                 android:layout_height="100dp" />
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -88,7 +88,7 @@
             android:layout_height="wrap_content">
 
             <include
-                layout="@layout/layout_shimmer_placeholder"
+                layout="@layout/image_placeholder"
                 android:layout_width="150dp"
                 android:layout_height="10dp" />
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -109,7 +109,7 @@
             android:layout_height="wrap_content">
 
             <include
-                layout="@layout/layout_shimmer_placeholder"
+                layout="@layout/image_placeholder"
                 android:layout_width="250dp"
                 android:layout_height="50dp" />
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -131,7 +131,7 @@
             android:layout_height="wrap_content">
 
             <include
-                layout="@layout/layout_shimmer_placeholder"
+                layout="@layout/image_placeholder"
                 android:layout_width="300dp"
                 android:layout_height="30dp" />
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -154,27 +154,27 @@
 
             <include
                 android:id="@+id/first_item"
-                layout="@layout/layout_item_data"
+                layout="@layout/shimmer_item_data"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
             <include
                 android:id="@+id/second_item"
-                layout="@layout/layout_item_data"
+                layout="@layout/shimmer_item_data"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toBottomOf="@id/first_item" />
 
             <include
                 android:id="@+id/third_item"
-                layout="@layout/layout_item_data"
+                layout="@layout/shimmer_item_data"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toBottomOf="@id/second_item" />
 
             <include
                 android:id="@+id/fourth_item"
-                layout="@layout/layout_item_data"
+                layout="@layout/shimmer_item_data"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toBottomOf="@id/third_item" />
