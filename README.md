@@ -8,7 +8,8 @@
 
 A Shimmer Animation library for Kotlin.
 <p align="center">
-<img width=30% src="./examples/example shimmer animation.gif">
+<img width=30% src="./examples/example shimmer animation base.gif">
+<img width=27% src="./examples/example shimmer animation.gif">
 </p>
 
 
