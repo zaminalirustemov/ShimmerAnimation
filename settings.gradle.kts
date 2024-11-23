@@ -16,6 +16,8 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+
+        // Include JitPack, a repository that allows you to fetch dependencies from GitHub projects.
         maven { url = uri("https://jitpack.io") }
     }
 }
