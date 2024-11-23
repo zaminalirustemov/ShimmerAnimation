@@ -6,7 +6,7 @@
 - ![android_7](https://img.shields.io/badge/Android-7.0_Nougat-green?style=for-the-badge)
 - ![min_sdk](https://img.shields.io/badge/minSdk-24-orange?style=for-the-badge)
 
-A Shimmer Animation library for Kotlin.
+<p align="center">A Shimmer Animation library for Kotlin.</p>
 <p align="center">
 <img width=30% src="./examples/example shimmer animation base.gif">
 <img width=27% src="./examples/example shimmer animation.gif">
