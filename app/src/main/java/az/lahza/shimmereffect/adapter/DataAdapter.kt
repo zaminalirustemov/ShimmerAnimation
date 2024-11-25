@@ -41,5 +41,4 @@ class DataAdapter(private val dataList: List<String>) :
             ColorDrawable(Color.parseColor("#A64D79"))
         ).random()
     }
-
 }
