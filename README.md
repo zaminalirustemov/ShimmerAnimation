@@ -47,7 +47,7 @@
 
 ## 🛠 Installation
 **Step 1.**  Add it in your root setting.gradle at the end of repositories: 
-```css
+```kotlin
 	dependencyResolutionManagement {
 		repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
 		repositories {
@@ -60,7 +60,7 @@
 ```
 **Step 2.**  Add the dependency
 
-```css
+```kotlin
 	// This dependencies block is for the build.gradle
 	dependencies {
 	        implementation 'com.github.zaminalirustamov:Shimmer_Animation:1.0.2'
