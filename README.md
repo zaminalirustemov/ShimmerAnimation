@@ -12,7 +12,6 @@
 <img width=27% src="./examples/example shimmer animation.gif">
 </p>
 
-
 ## 📦 Features
 
 - 🌈 **Customizable Direction**  
